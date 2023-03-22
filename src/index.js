@@ -1,3 +1,9 @@
+/*Check if there is a value to one of the fields */
+$('.mt-input').each(function () {
+  if ($(this).val().length > 0) {
+    $(this).siblings('.crisis-funding-label').addClass('is--in-focus');
+  }
+});
 /*First Embed */
 document.addEventListener('DOMContentLoaded', () => {
   const queryString = window.location.search;
@@ -19,12 +25,12 @@ const outstandingloanAmountInput = document.querySelector('input[name="outstandi
 const cashRunwayInput = document.querySelector('input[name="cash_runway"]');
 const successInner = document.querySelector('.success-inner');
 
-const emailLabel = document.querySelector('#label-email');
-const companyLabel = document.querySelector('#label-company');
-const countryLabel = document.querySelector('#label-country');
-const annualRevenueLabel = document.querySelector('#label-annual_revenue');
-const outstandingloanAmountLabel = document.querySelector('#label-outstanding_loan_amount');
-const cashRunwayLabel = document.querySelector('#label-cash_runway');
+// const emailLabel = document.querySelector('#label-email');
+// const companyLabel = document.querySelector('#label-company');
+// const countryLabel = document.querySelector('#label-country');
+// const annualRevenueLabel = document.querySelector('#label-annual_revenue');
+// const outstandingloanAmountLabel = document.querySelector('#label-outstanding_loan_amount');
+// const cashRunwayLabel = document.querySelector('#label-cash_runway');
 
 const emailInputWrapper = document.querySelector('.crisis-funding-field-wrapper.is--1');
 const companyInputWrapper = document.querySelector('.crisis-funding-field-wrapper.is--2');
