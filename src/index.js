@@ -1,9 +1,3 @@
-/*Check if there is a value to one of the fields */
-$('.mt-input').each(function () {
-  if ($(this).val().length > 0) {
-    $(this).siblings('.crisis-funding-label').addClass('is--in-focus');
-  }
-});
 /*First Embed */
 document.addEventListener('DOMContentLoaded', () => {
   const queryString = window.location.search;
