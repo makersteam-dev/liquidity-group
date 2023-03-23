@@ -17,7 +17,7 @@ const countryInput = document.querySelector('input[name="country"]');
 // const annualRevenueInput = document.querySelector('input[name="annual_revenue"]');
 // const outstandingloanAmountInput = document.querySelector('input[name="outstanding_loan_amount"]');
 // const cashRunwayInput = document.querySelector('input[name="cash_runway"]');
-// const successInner = document.querySelector('.success-inner');
+const successInner = document.querySelector('.success-inner');
 
 // const emailLabel = document.querySelector('#label-email');
 // const companyLabel = document.querySelector('#label-company');
