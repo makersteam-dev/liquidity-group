@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
 const emailInput = document.querySelector('input[name="email"]');
 const companyInput = document.querySelector('input[name="company"]');
 const countryInput = document.querySelector('input[name="country"]');
-const annualRevenueInput = document.querySelector('input[name="annual_revenue"]');
-const outstandingloanAmountInput = document.querySelector('input[name="outstanding_loan_amount"]');
-const cashRunwayInput = document.querySelector('input[name="cash_runway"]');
-const successInner = document.querySelector('.success-inner');
+// const annualRevenueInput = document.querySelector('input[name="annual_revenue"]');
+// const outstandingloanAmountInput = document.querySelector('input[name="outstanding_loan_amount"]');
+// const cashRunwayInput = document.querySelector('input[name="cash_runway"]');
+// const successInner = document.querySelector('.success-inner');
 
 // const emailLabel = document.querySelector('#label-email');
 // const companyLabel = document.querySelector('#label-company');
@@ -30,9 +30,9 @@ const emailInputWrapper = document.querySelector('.crisis-funding-field-wrapper.
 const companyInputWrapper = document.querySelector('.crisis-funding-field-wrapper.is--2');
 const countryInputWrapper = document.querySelector('.crisis-funding-field-wrapper.is--3');
 
-const annualRevenueWrapper = document.querySelector('.crisis-funding-field-wrapper.is--4');
-const outstandingLoanAmountWrapper = document.querySelector('.crisis-funding-field-wrapper.is--5');
-const cashRunwayWrapper = document.querySelector('.crisis-funding-field-wrapper.is--6');
+// const annualRevenueWrapper = document.querySelector('.crisis-funding-field-wrapper.is--4');
+// const outstandingLoanAmountWrapper = document.querySelector('.crisis-funding-field-wrapper.is--5');
+// const cashRunwayWrapper = document.querySelector('.crisis-funding-field-wrapper.is--6');
 
 const re = `^[a-zA-Z0-9._%+-]+@(?!gmail\.com|yahoo\.com|hotmail\.com)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`;
 
@@ -61,36 +61,36 @@ const validatecountry = () => {
   }
 };
 
-const validateAnnualRevenueInput = () => {
-  if (annualRevenueInput.value === '') {
-    annualRevenueInput.classList.add('is--error');
-  } else {
-    annualRevenueInput.classList.remove('is--error');
-  }
-};
+// const validateAnnualRevenueInput = () => {
+//   if (annualRevenueInput.value === '') {
+//     annualRevenueInput.classList.add('is--error');
+//   } else {
+//     annualRevenueInput.classList.remove('is--error');
+//   }
+// };
 
-const validateOutstandingloanAmountInput = () => {
-  if (outstandingloanAmountInput.value === '') {
-    outstandingloanAmountInput.classList.add('is--error');
-  } else {
-    outstandingloanAmountInput.classList.remove('is--error');
-  }
-};
+// const validateOutstandingloanAmountInput = () => {
+//   if (outstandingloanAmountInput.value === '') {
+//     outstandingloanAmountInput.classList.add('is--error');
+//   } else {
+//     outstandingloanAmountInput.classList.remove('is--error');
+//   }
+// };
 
-const validateCashRunwayInput = () => {
-  if (cashRunwayInput.value === '') {
-    cashRunwayInput.classList.add('is--error');
-  } else {
-    cashRunwayInput.classList.remove('is--error');
-  }
-};
+// const validateCashRunwayInput = () => {
+//   if (cashRunwayInput.value === '') {
+//     cashRunwayInput.classList.add('is--error');
+//   } else {
+//     cashRunwayInput.classList.remove('is--error');
+//   }
+// };
 
 emailInput.addEventListener('focusout', validateEmail);
 companyInput.addEventListener('focusout', validatecompany);
 countryInput.addEventListener('focusout', validatecountry);
-annualRevenueInput.addEventListener('focusout', validateAnnualRevenueInput);
-outstandingloanAmountInput.addEventListener('focusout', validateOutstandingloanAmountInput);
-cashRunwayInput.addEventListener('focusout', validateCashRunwayInput);
+// annualRevenueInput.addEventListener('focusout', validateAnnualRevenueInput);
+// outstandingloanAmountInput.addEventListener('focusout', validateOutstandingloanAmountInput);
+// cashRunwayInput.addEventListener('focusout', validateCashRunwayInput);
 
 /*Third Embed */
 $('form[action^="https://api.hsforms.com"]').each(function (i) {
