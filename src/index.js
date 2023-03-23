@@ -145,6 +145,12 @@ $('form[action^="https://api.hsforms.com"]').each(function (i) {
         goToWebinarKey: goToWebinarWebinarKey, // go to meeting key
         hutk: hutk, // hubspot user token
       },
+      properties: [
+        {
+          property: 'country',
+          value: countryInput.value,
+        },
+      ],
       ...(!processingPrompt
         ? {}
         : {
