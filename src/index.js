@@ -15,10 +15,6 @@ const emailInput = document.querySelector('input[name="email"]');
 const companyInput = document.querySelector('input[name="company"]');
 const countryInput = document.querySelector('input[name="country"]');
 
-const emailInputWrapper = document.querySelector('.crisis-funding-field-wrapper.is--1');
-const companyInputWrapper = document.querySelector('.crisis-funding-field-wrapper.is--2');
-const countryInputWrapper = document.querySelector('.crisis-funding-field-wrapper.is--3');
-
 const re = `^[a-zA-Z0-9._%+-]+@(?!gmail\.com|yahoo\.com|hotmail\.com)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`;
 
 const validateEmail = () => {
@@ -70,7 +66,7 @@ $('form[action^="https://api.hsforms.com"]').each(function (i) {
     const hutk =
       document.cookie.replace(/(?:(?:^|.*;\s*)hubspotutk\s*\=\s*([^;]*).*$)|^.*$/, '$1') ||
       undefined; // looks for an input with the name hutk, the hubspot user token
-    console.log(hutk);
+    // console.log(hutk);
     const processingPrompt = $(this).find("[id*='gdpr-processing-prompt']"); // looks for an element with the id gdpr-processing-prompt
     const communicationConsent = parsedFormData
       .filter((item) => item.name.includes('LEGAL_CONSENT'))
@@ -147,11 +143,11 @@ $('form[action^="https://api.hsforms.com"]').each(function (i) {
             window.location.href = response.redirectUri;
           }
         } else {
-          console.log('response but no inlineMessage or redirectUri');
+          // console.log('response but no inlineMessage or redirectUri');
         }
       },
       error: function () {
-        console.log('error on the form submitting');
+        // console.log('error on the form submitting');
         $(e.target).css('display', 'none').siblings('.w-form-fail').css('display', 'block'); // replace .w-form-fail with your own form done section
       },
     });

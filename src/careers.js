@@ -5,7 +5,7 @@
              docs:
              https://developers.comeet.com/reference/list-all-positions-new-to-be-changed-to-page
   ########################################################*/
-/*tokkens for comeet integration - May 2022 */
+/*tokkens for comeet integration - March 2023 */
 window.comeetInit = function () {
   COMEET.init({
     token: '77A2CDC166E3BD03BD0345634562CDC1DE8EF4',
